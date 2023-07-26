@@ -1,0 +1,20 @@
+
+#indicators-carousel{
+    border:solid 1.3rem rgba(100, 97, 97, 0.237);
+}
+
+#indicators-carousel::before{
+    content: "🗕 🗖 ╳";
+    color: antiquewhite;
+    position: absolute;
+    top: -1.35rem;
+    right: 2px;
+}
+
+#indicators-carousel::after{
+    content: attr(dataTime);
+    color: antiquewhite;
+    position: absolute;
+    bottom: -1.35rem;
+    right: 2px;
+}
