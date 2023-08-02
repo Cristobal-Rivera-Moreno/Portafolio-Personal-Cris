@@ -1,18 +1,21 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "🗄 Ámbito laboral", href: "#", current: true },
-  { name: "🎒 Ámbito educativo", href: "#", current: false },
-  { name: "🧔 Ámbito personal", href: "#", current: false },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export function NavBar() {
+  const navigation = [
+    { name: "🗄 Ámbito laboral", href: "ambito-laboral", current: false },
+    { name: "🎒 Ámbito educativo", href: "ambito-educativo", current: false },
+    { name: "🧔 Ámbito personal", href: "ambito-personal", current: false },
+  ];
+  const [curNav,setCurNav] = useState(0);
+  navigation[curNav].current = true;
   return (
     <Disclosure as="nav" className="bg-gray-600">
       {({ open }) => (
@@ -50,20 +53,21 @@ export function NavBar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
+                    {navigation.map((item,i) => (
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
+                            ? "bg-gray-900 text-white "
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 text-sm font-medium "
                         )}
                         aria-current={item.current ? "page" : undefined}
+                        onClick={(ev)=>{setCurNav(i)}}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
