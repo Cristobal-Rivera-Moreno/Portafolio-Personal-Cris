@@ -13,7 +13,7 @@ export const ExperienciaLaboral = ()=>{
                 Becario de desarrollo web con distintas tecnologias(Full stack).
               </h2>
               <small className="block font-medium">
-                Feb-Dic 2023 Grupo Sinco
+                Feb-Dic 2023 Grupo Sinco tech and business innovation
               </small>
               <p className="text-justify pl-16 pr-16">
                 En mi estadia utilice tecnologias como Angular, C#,

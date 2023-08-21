@@ -35,6 +35,9 @@ export const AmbitoLaboral = ()=>{
     {src:"src/assets/images/sqlserver.svg",class:"w-36 h-16 inline-block col-start-1 col-span-1 row-start-2 -rotate-12"},
     {src:"src/assets/images/sql.png",class:"w-10 h-10 inline-block col-start-5 col-span-1 row-start-2 rotate-12"},
     {src:"src/assets/images/.net.jpg",class:"w-10 h-10 inline-block col-start-5 col-span-1 row-start-6 rotate-12"},
+    {src:"src/assets/images/java-icon.svg",class:"w-10 h-10 inline-block col-start-1 col-span-1 row-start-5 rotate-12"},
+    {src:"src/assets/images/golang.svg",class:"w-10 h-10 inline-block col-start-5 col-span-1 row-start-1 rotate-12"},
+    
   ];
   return (
     <>

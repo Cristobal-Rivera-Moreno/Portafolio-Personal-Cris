@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-
 export function NavBar() {
-  const navigation = [
-    { name: "🗄 Ámbito laboral", href: "ambito-laboral", current: false },
-    { name: "🎒 Ámbito educativo", href: "ambito-educativo", current: false },
-    { name: "🧔 Ámbito personal", href: "ambito-personal", current: false },
-  ];
+  
   const [curNav,setCurNav] = useState(0);
+  const navigation = [
+  { name: "🗄 Ámbito laboral", href: "ambito-laboral", current: false },
+  { name: "🎒 Ámbito educativo", href: "ambito-educativo", current: false },
+  { name: "🧔 Ámbito personal", href: "ambito-personal", current: false },
+];
   navigation[curNav].current = true;
   return (
     <Disclosure as="nav" className="bg-gray-600">
@@ -73,6 +73,11 @@ export function NavBar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <h1>Cristobal Rivera Moreno.</h1>
+                &nbsp;&nbsp;
+                <h1>Aguascalientes Ags.</h1>
+                &nbsp;&nbsp;
+                <h1>Desarrollador</h1>
                 <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
