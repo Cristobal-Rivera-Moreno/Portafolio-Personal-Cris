@@ -12,7 +12,8 @@
 }
 
 #indicators-carousel::after{
-    content: attr(datatime);
+    /* content: attr(datatime); */
+    content: "Aguascalientes, México.";
     color: antiquewhite;
     position: absolute;
     bottom: -1.35rem;

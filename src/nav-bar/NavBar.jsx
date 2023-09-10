@@ -75,9 +75,8 @@ export function NavBar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <h1>Cristobal Rivera Moreno.</h1>
                 &nbsp;&nbsp;
-                <h1>Aguascalientes Ags.</h1>
-                &nbsp;&nbsp;
-                <h1>Desarrollador</h1>
+               
+                <h1 className="font-bold">Ingeniero en sistemas computacionales.</h1>
                 <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -93,7 +92,7 @@ export function NavBar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="src/assets/images/profile-modified.png"
                         alt=""
                       />
                     </Menu.Button>
