@@ -46,7 +46,7 @@ export const AmbitoLaboral = ()=>{
         className="relative p-6 w-full "
         datatime={"s"}
       >
-        <div className="relative cont h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative cont h-auto sm:h-56 overflow-hidden rounded-lg md:h-96">
           <div className="flex h-full phone bg-blue-400/[0.25]">
             <div className="w-1/4 h-full bg-red-300 sub-cont">
               <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>
@@ -58,7 +58,7 @@ export const AmbitoLaboral = ()=>{
               }
             </div>
 
-            <div className="w-1/4 grid  h-full  bg-lime-100/[0.25] sub-cont">
+            <div className="w-1/4 grid  h-96 sm:h-auto  bg-lime-100/[0.25] sub-cont">
               <CarouselProyecs/>
             
             </div>

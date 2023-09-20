@@ -25,8 +25,24 @@ export const CarouselProyecs = () =>{
                 <header>
                     <h1 className="text-center font-bold ">Proyectos realizados</h1>
                 </header>
-                <div className="picture bg-blue-300 h-1/4 w-full">
-                    <div className=""></div>
+                <div className="carousel relative bg-blue-300/30 h-3/4 w-full">
+                    <button className=" absolute z-50 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2">
+                        &#60;
+                    </button>
+                    <button className="absolute z-50 top-1/2 right-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:-translate-x-2">
+                        &#62;
+                    </button>
+                    <div className="absolute top-1/4">
+                        <img src="src/assets/images/proy_1.gif" className="w-full h-full " alt="" />
+                    </div>
+                    <div className="picture">
+                        <img src="src/assets/react.svg" className="hidden w-full h-full" alt="" />
+                    </div>
+                    <div className="picture">
+                        <img src="src/assets/react.svg" className="hidden w-full h-full" alt="" />
+                    </div>
+                    
+                    
                 </div>
                 <footer>
                     desc
