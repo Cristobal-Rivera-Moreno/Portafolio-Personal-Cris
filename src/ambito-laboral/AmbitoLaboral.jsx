@@ -8,7 +8,7 @@ import { SideBar } from "../side-bar/SideBar";
 import { ExperienciaLaboral } from "../ambito-laboral/Experiencia-Laboral";
 import { ConocimientoLaboral } from "../ambito-laboral/Conocimiento-Laboral";
 import { HabilidadesLaborales } from "../ambito-laboral/Habilidades-Laborales";
-
+import { CarouselProyecs } from '../carousel-proy/carouselProyects';
 
 export const AmbitoLaboral = ()=>{
 
@@ -43,24 +43,23 @@ export const AmbitoLaboral = ()=>{
     <>
       <div
         id="indicators-carousel"
-        className="relative p-6 w-full  
-"
+        className="relative p-6 w-full "
         datatime={"s"}
       >
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <div className="flex h-full  bg-blue-400/[0.25]">
-            <div className="w-1/4 h-full bg-red-300">
+        <div className="relative cont h-56 overflow-hidden rounded-lg md:h-96">
+          <div className="flex h-full phone bg-blue-400/[0.25]">
+            <div className="w-1/4 h-full bg-red-300 sub-cont">
               <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>
             </div>
             {/* Here Info */}
-            <div className="w-2/4 h-full bg-blue-100/[0.05]">
+            <div className="w-2/4 h-full bg-blue-100/[0.05] sub-cont">
               {
                 seccion == 1 ? <ExperienciaLaboral></ExperienciaLaboral>:seccion == 2?<ConocimientoLaboral></ConocimientoLaboral>:<HabilidadesLaborales></HabilidadesLaborales>
               }
             </div>
 
-            <div className="w-1/4 grid grid-cols-6 grid-rows-6 h-full  bg-lime-100/[0.25]">
-              <Imagee imgs={imgs}/>
+            <div className="w-1/4 grid  h-full  bg-lime-100/[0.25] sub-cont">
+              <CarouselProyecs/>
             
             </div>
           </div>

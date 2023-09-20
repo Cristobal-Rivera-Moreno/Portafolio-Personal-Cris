@@ -5,3 +5,16 @@
   text-align: center;
 }
 
+@media screen and (max-width:650px) {
+  .phone{
+    display: flex;
+    flex-direction: column;
+  }
+  .cont{
+    height: auto !important;
+  }
+  .sub-cont{
+    width: auto !important;
+  }
+  
+}
