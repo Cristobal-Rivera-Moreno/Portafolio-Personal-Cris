@@ -43,7 +43,7 @@ export const AmbitoLaboral = ()=>{
     <>
       <div
         id="indicators-carousel"
-        className="relative p-6 w-full "
+        className="relative p-6  w-full "
         datatime={"s"}
       >
         <div className="relative cont h-auto sm:h-56 overflow-hidden rounded-lg md:h-96">
