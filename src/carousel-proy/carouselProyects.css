@@ -1,0 +1,21 @@
+/* .fondo{
+   
+    z-index: 2;
+    background-image: url('src/assets/images/proy_1.gif');
+    background-size: 100% 100%;
+    background-color: rgba(17, 204, 26, 0.5);
+   transform: scale(1.05);
+   filter:hue-rotate(240deg) opacity(0.5);
+} */
+.carousel div img{
+   
+}
+.carousel{
+    background-size: 100% 100%;
+    background:linear-gradient(0.25turn, #22d3ee,rgb(10, 98, 32));
+   
+}
+.carousel .fondo{
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) blur(1px);
+}
