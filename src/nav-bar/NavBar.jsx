@@ -85,7 +85,7 @@ export function NavBar() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="src/assets/images/profile-modified.png"
+                        src={import.meta.env.VITE_PATH+'profile-modified.png?raw=true'}
                         alt=""
                       />
                     </Menu.Button>

@@ -8,8 +8,7 @@ export const ConocimientoLaboral = ()=>{
              🧠 Conocimiento
               </h1>
              
-              <p className="text-justify pl-16 pr-16">
-               
+        
                 <ol className="list-disc">
                     <li>C y C++</li>
                     <li>Java</li>
@@ -29,7 +28,6 @@ export const ConocimientoLaboral = ()=>{
                     <li>Ingles intermedio</li>
                 </ol>                
                
-              </p>
         
         
         </>

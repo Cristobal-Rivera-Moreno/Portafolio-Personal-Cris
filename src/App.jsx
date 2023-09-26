@@ -16,11 +16,11 @@ function App() {
     <>
      <NavBar/>
      <Routes>
-        <Route path="/" element={ <AmbitoLaboral /> } />
+        <Route path="//Portafolio-Personal-Cris" element={ <AmbitoLaboral /> } />
         
-        <Route path="/ambito-laboral" element={ <AmbitoLaboral /> } />
-        <Route path="/ambito-educativo" element={ <AmbitoEducativo /> } />
-        <Route path="/ambito-personal" element={ <AmbitoPersonal /> } />
+        <Route path="/Portafolio-Personal-Cris/ambito-laboral" element={ <AmbitoLaboral /> } />
+        <Route path="/Portafolio-Personal-Cris/ambito-educativo" element={ <AmbitoEducativo /> } />
+        <Route path="/Portafolio-Personal-Cris/ambito-personal" element={ <AmbitoPersonal /> } />
         
       </Routes>
      

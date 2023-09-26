@@ -9,7 +9,7 @@ import { ExperienciaLaboral } from "../ambito-laboral/Experiencia-Laboral";
 import { ConocimientoLaboral } from "../ambito-laboral/Conocimiento-Laboral";
 import { HabilidadesLaborales } from "../ambito-laboral/Habilidades-Laborales";
 import { CarouselProyecs } from '../carousel-proy/carouselProyects';
-
+import { AspiracionesLaborales } from './AspiracionesLaborales';
 export const AmbitoLaboral = ()=>{
 
    const [seccion,setSeccion] = useState(1);
@@ -18,6 +18,7 @@ export const AmbitoLaboral = ()=>{
     
   }
   const itemsSideBar = [
+    { icono:'📈',   texto:'Aspiraciones'},
     { icono:'💼', texto:'Experiencia laboral' },
     { icono:'🧠', texto:'Conocimiento' },
     { icono:'🛠' , texto:'Habilidades'}
@@ -54,7 +55,8 @@ export const AmbitoLaboral = ()=>{
             {/* Here Info */}
             <div className="w-2/4 h-full bg-blue-100/[0.05] sub-cont">
               {
-                seccion == 1 ? <ExperienciaLaboral></ExperienciaLaboral>:seccion == 2?<ConocimientoLaboral></ConocimientoLaboral>:<HabilidadesLaborales></HabilidadesLaborales>
+                seccion == 1 ? <AspiracionesLaborales></AspiracionesLaborales>:
+                seccion == 2 ? <ExperienciaLaboral></ExperienciaLaboral>:seccion == 3?<ConocimientoLaboral></ConocimientoLaboral>:<HabilidadesLaborales></HabilidadesLaborales>
               }
             </div>
 

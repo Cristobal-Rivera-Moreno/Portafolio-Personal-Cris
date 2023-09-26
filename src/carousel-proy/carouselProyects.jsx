@@ -104,7 +104,6 @@ export const CarouselProyecs = () =>{
         carouselEvents();
     },[]);
 
-
     return (
         <>
                 <main>
@@ -113,7 +112,7 @@ export const CarouselProyecs = () =>{
                 </header>
                 <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden">
                     <h3 className='absolute text-white top-2 z-30 text-center w-full font-bold italic ' id='proyect-title'>title</h3>
-                    <img id='wallpaper' src="src/assets/images/Animalitos.gif" className='fondo absolute h-full' alt="" />
+                    <img id='wallpaper' src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} className='fondo absolute h-full' alt="" />
                     <button id='previous' className=" absolute z-50 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
                         &#60;
                     </button>
@@ -121,14 +120,14 @@ export const CarouselProyecs = () =>{
                         &#62;
                     </button>
                     <div className="picture absolute top-1/4 z-10">
-                        <img src="src/assets/images/Animalitos.gif" className="w-full h-full scale-125 " alt="" />
+                        <img src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} alt="" />
                     </div>
                   
                     <div className="hidden picture absolute top-1/4 z-10">
-                        <img src="src/assets/images/heroes.gif" className=" w-full h-full" alt="" />
+                        <img src={import.meta.env.VITE_PATH + '/heroes.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     <div className="hidden picture absolute top-1/4 z-10">
-                        <img src="src/assets/images/pokemon.gif" className=" w-full h-full" alt="" />
+                        <img src={import.meta.env.VITE_PATH + '/pokemon.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     
                 </div>
