@@ -104,12 +104,14 @@ function touchStart(ev){
 }
 function touchMove(ev){
     touchEndX = ev.touches[0].clientX;
+    console.log(JSON.stringify(touchEndX))
 }
 function touchEnd(ev){
+    
     var resX = touchEndX - touchStartX;
-    if( resX > 0 ){
+    if( resX < 0 ){
         nextButton.click();
-    }else if ( resX < 0 ){
+    }else if ( resX > 0 ){
         previousButton.click();
     }
 }
@@ -126,7 +128,7 @@ export const CarouselProyecs = () =>{
                 <header>
                     <h1 className="text-center font-bold ">Proyectos realizados</h1>
                 </header>
-                <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
+                <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden" >
                     <h3 className='absolute text-white top-2 z-30 text-center w-full font-bold italic ' id='proyect-title'>title</h3>
                     <img id='wallpaper' src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} className='fondo absolute h-full' alt="" />
                     <button id='previous' className=" absolute z-50 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
@@ -135,14 +137,14 @@ export const CarouselProyecs = () =>{
                     <button id='next' className="absolute z-50 top-1/2 right-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:-translate-x-2" onClick={handleNextButton}>
                         &#62;
                     </button>
-                    <div className="picture absolute top-1/4 z-10">
+                    <div className="picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
                         <img src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} alt="" />
                     </div>
                   
-                    <div className="hidden picture absolute top-1/4 z-10">
+                    <div className="hidden picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
                         <img src={import.meta.env.VITE_PATH + '/heroes.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
-                    <div className="hidden picture absolute top-1/4 z-10">
+                    <div className="hidden picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
                         <img src={import.meta.env.VITE_PATH + '/pokemon.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     
