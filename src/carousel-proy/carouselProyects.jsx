@@ -97,6 +97,22 @@ function handlePreviousButton(ev){
     description.innerHTML = arrayProys[i].text; 
  
 }
+var touchStartX = 0;
+var touchEndX   = 0;
+function touchStart(ev){
+    touchStartX = ev.touches[0].clientX;
+}
+function touchMove(ev){
+    touchEndX = ev.touches[0].clientX;
+}
+function touchEnd(ev){
+    var resX = touchEndX - touchStartX;
+    if( resX > 0 ){
+        nextButton.click();
+    }else if ( resX < 0 ){
+        previousButton.click();
+    }
+}
 
 export const CarouselProyecs = () =>{
 
@@ -110,7 +126,7 @@ export const CarouselProyecs = () =>{
                 <header>
                     <h1 className="text-center font-bold ">Proyectos realizados</h1>
                 </header>
-                <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden">
+                <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
                     <h3 className='absolute text-white top-2 z-30 text-center w-full font-bold italic ' id='proyect-title'>title</h3>
                     <img id='wallpaper' src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} className='fondo absolute h-full' alt="" />
                     <button id='previous' className=" absolute z-50 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
