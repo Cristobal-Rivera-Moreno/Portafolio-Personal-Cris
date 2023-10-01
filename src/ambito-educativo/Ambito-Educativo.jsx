@@ -3,17 +3,18 @@ import { SideBar } from '../side-bar/SideBar';
 import { ISCEducativo } from './ISC-Educativo';
 import { ProyectosEducativo } from './Proyectos-Educativo';
 import { CarouselProyecs } from '../carousel-proy/carouselProyects';
+export const itemsSideBar = [
+  { icono:'💻', texto:'Ingenieria en sistemas computacionales ISC.' },
+  { icono:'💻', texto:'Proyectos realizados como estudiante.' },
+  
+] 
 export const AmbitoEducativo = () => {
   const [seccion,setSeccion] = useState(1);
   function changeSeccion(val){
     setSeccion(val);
     
   }
-  const itemsSideBar = [
-    { icono:'💻', texto:'Ingenieria en sistemas computacionales ISC.' },
-    { icono:'💻', texto:'Proyectos realizados como estudiante.' },
-    
-  ] 
+  
   return (
     <>
       <div

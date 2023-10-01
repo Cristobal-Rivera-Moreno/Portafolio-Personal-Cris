@@ -2,12 +2,13 @@ import { HobbiesPersonal } from "./Hobbies-Personal";
 import { useState } from "react";
 import { SideBar } from "../side-bar/SideBar";
 import { CarouselProyecs } from "../carousel-proy/carouselProyects";
+export const itemsSideBar = [
+  { icono:'💫', texto:'Pasatiempos' },
+  { icono:'💭', texto:'Valores' },
+  { icono:'🧔' , texto:'Más sobre mi'}
+] 
 export const AmbitoPersonal = () => {
-  const itemsSideBar = [
-    { icono:'💫', texto:'Pasatiempos' },
-    { icono:'💭', texto:'Valores' },
-    { icono:'🧔' , texto:'Más sobre mi'}
-  ] 
+  
   const [seccion,setSeccion] = useState(1);
   function changeSeccion(val){
     setSeccion(val);

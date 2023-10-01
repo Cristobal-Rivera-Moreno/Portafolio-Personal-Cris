@@ -10,6 +10,12 @@ import { ConocimientoLaboral } from "../ambito-laboral/Conocimiento-Laboral";
 import { HabilidadesLaborales } from "../ambito-laboral/Habilidades-Laborales";
 import { CarouselProyecs } from '../carousel-proy/carouselProyects';
 import { AspiracionesLaborales } from './AspiracionesLaborales';
+export const itemsSideBar = [
+  { icono:'📈',   texto:'Aspiraciones'},
+  { icono:'💼', texto:'Experiencia laboral' },
+  { icono:'🧠', texto:'Conocimiento' },
+  { icono:'🛠' , texto:'Habilidades'}
+] 
 export const AmbitoLaboral = ()=>{
 
    const [seccion,setSeccion] = useState(1);
@@ -17,12 +23,7 @@ export const AmbitoLaboral = ()=>{
     setSeccion(val);
     
   }
-  const itemsSideBar = [
-    { icono:'📈',   texto:'Aspiraciones'},
-    { icono:'💼', texto:'Experiencia laboral' },
-    { icono:'🧠', texto:'Conocimiento' },
-    { icono:'🛠' , texto:'Habilidades'}
-  ] 
+  
   const imgs = [
 
     {src:"src/assets/images/angular.png",class:"w-10 inline-block col-start-2 col-span-1 rotate-12"},
@@ -47,13 +48,13 @@ export const AmbitoLaboral = ()=>{
         className="relative p-6  w-full "
         datatime={"s"}
       >
-        <div className="relative cont h-auto sm:h-56 overflow-hidden rounded-lg md:h-96">
+        <div className="relative cont  sm:h-auto overflow-hidden rounded-lg md:h-96">
           <div className="flex h-full phone bg-blue-400/[0.25]">
             <div className="w-1/4 h-full bg-red-300 sub-cont">
               <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>
             </div>
             {/* Here Info */}
-            <div className="w-2/4 h-full bg-blue-100/[0.05] sub-cont">
+            <div className="w-2/4 h-full overflow-auto bg-[#2187ab]/30 sub-cont">
               {
                 seccion == 1 ? <AspiracionesLaborales></AspiracionesLaborales>:
                 seccion == 2 ? <ExperienciaLaboral></ExperienciaLaboral>:seccion == 3?<ConocimientoLaboral></ConocimientoLaboral>:<HabilidadesLaborales></HabilidadesLaborales>

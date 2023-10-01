@@ -2,8 +2,8 @@ export const SideBar = ({ children,changeSeccion,items }) => {
   const values = items.map((val,i)=>
   <li key={i} onMouseOver={()=>{document.getElementsByClassName('icon')[i].classList.add('animate-bounce')} }onMouseLeave={()=>{document.getElementsByClassName('icon')[i].classList.remove('animate-bounce')}} onClick={()=>changeSeccion(i+1)}>
   <a
-    href="#"
-    className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+    
+    className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group cursor-pointer"
   >
    <span className="icon"> 
       {val.icono}

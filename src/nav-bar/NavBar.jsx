@@ -11,9 +11,9 @@ export function NavBar() {
   
   const [curNav,setCurNav] = useState(0);
   const navigation = [
-  { name: "🗄 Ámbito laboral", href: "ambito-laboral", current: false },
-  { name: "🎒 Ámbito educativo", href: "ambito-educativo", current: false },
-  { name: "🧔 Ámbito personal", href: "ambito-personal", current: false },
+  { name: "🗄 Ámbito laboral", href: "/Portafolio-Personal-Cris/ambito-laboral", current: false },
+  { name: "🎒 Ámbito educativo", href: "/Portafolio-Personal-Cris/ambito-educativo", current: false },
+  { name: "🧔 Ámbito personal", href: "/Portafolio-Personal-Cris/ambito-personal", current: false },
 ];
   navigation[curNav].current = true;
   return (
