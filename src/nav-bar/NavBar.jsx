@@ -1,21 +1,27 @@
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 export function NavBar() {
-  
+  const location = useLocation();
   const [curNav,setCurNav] = useState(0);
   const navigation = [
   { name: "🗄 Ámbito laboral", href: "/Portafolio-Personal-Cris/ambito-laboral", current: false },
   { name: "🎒 Ámbito educativo", href: "/Portafolio-Personal-Cris/ambito-educativo", current: false },
   { name: "🧔 Ámbito personal", href: "/Portafolio-Personal-Cris/ambito-personal", current: false },
 ];
-  navigation[curNav].current = true;
+  if( location.pathname === navigation[0].href ){
+    navigation[0].current = true;
+  }else if( location.pathname === navigation[1].href ){
+    navigation[1].current = true;
+  }else{
+    navigation[2].current = true;
+  }
   return (
     <Disclosure as="nav" className="bg-gray-600">
       {({ open }) => (
@@ -72,10 +78,11 @@ export function NavBar() {
                 <h1 className="font-bold">Ingeniero en sistemas computacionales.</h1>
                 <button
                   type="button"
-                  className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="ml-4 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 w-8 h-8 text-xl font-bold"
                 >
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  {/* {<BellIcon className="h-6 w-6" aria-hidden="true" />} */}
+                  <span className="text-xl font-bold ">🗎</span>
                 </button>
 
                 {/* Profile dropdown */}
