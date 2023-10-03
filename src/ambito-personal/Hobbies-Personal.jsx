@@ -4,7 +4,7 @@ export const HobbiesPersonal = ()=>{
     
     return(
         <>
-         <h1 className="text-center font-mono font-semibold text-lg bg-gray-600 text-white w-full">
+         <h1 className="text-center font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
          💫Pasatiempos
               </h1>
             <ol>

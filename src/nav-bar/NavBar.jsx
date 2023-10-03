@@ -3,6 +3,20 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link,useLocation } from "react-router-dom";
 
+function handleSummary(ev){
+  let a = document.createElement("a");
+  let div = document.getElementById("pdfContainer");
+  // a.setAttribute('target','_blanck')
+  // let iframe = document.createElement("iframe");
+  // iframe.setAttribute('src','src/assets/summary.pdf');
+  // iframe.width = "80%";
+  // iframe.height = "90%";
+  
+  // iframe.classList.add('absolute','z-50','m-auto')
+  // a.appendChild(iframe)
+  // div.appendChild(iframe);
+  div.classList.toggle('hidden')
+}
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -15,7 +29,7 @@ export function NavBar() {
   { name: "🎒 Ámbito educativo", href: "/Portafolio-Personal-Cris/ambito-educativo", current: false },
   { name: "🧔 Ámbito personal", href: "/Portafolio-Personal-Cris/ambito-personal", current: false },
 ];
-  if( location.pathname === navigation[0].href ){
+  if( location.pathname === navigation[0].href || location.pathname === "/Portafolio-Personal-Cris/" ){
     navigation[0].current = true;
   }else if( location.pathname === navigation[1].href ){
     navigation[1].current = true;
@@ -23,9 +37,15 @@ export function NavBar() {
     navigation[2].current = true;
   }
   return (
+    
     <Disclosure as="nav" className="bg-gray-600">
       {({ open }) => (
         <>
+        <div className="flex hidden w-full absolute z-50 justify-center" id="pdfContainer">
+          <button className="w-10 h-10 rounded-full absolute right-0 top-5 bg-black text-green-400 animate-bounce hover:animate-none hover:top-0" onClick={handleSummary}><span className="animate-pulse">🗙</span></button>
+          <iframe src="src/assets/summary.pdf" style={{width:"90vw", height:"100vh"}} >
+          </iframe>
+          </div>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative h-auto flex flex-col sm:flex-col sm:h-auto md:h-24 p-6 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center ">
@@ -78,11 +98,16 @@ export function NavBar() {
                 <h1 className="font-bold">Ingeniero en sistemas computacionales.</h1>
                 <button
                   type="button"
-                  className="ml-4 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 w-8 h-8 text-xl font-bold"
+                  className="ml-4 icon relative rounded-full hover:text-gray-300 hover:font-extrabold w-8 h-8 text-xl font-bold"
+                  onClick={handleSummary}
                 >
                   <span className="sr-only">View notifications</span>
                   {/* {<BellIcon className="h-6 w-6" aria-hidden="true" />} */}
-                  <span className="text-xl font-bold ">🗎</span>
+                  <a href="#" className= "flex justify-center   icon rounded-full w-10 h-10 github">
+                    <span className="text-xl font-bold ">🗎</span>
+                  
+                  <span className="tooltip">Curriculum</span>
+                  </a>
                 </button>
 
                 {/* Profile dropdown */}

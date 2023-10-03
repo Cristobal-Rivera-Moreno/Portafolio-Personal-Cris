@@ -5,9 +5,9 @@ export const ISCEducativo = ()=>{
 
     return (
         <>
-              <h2 className="font-semibold font-serif">
+              <h1 className="font-semibold text-lg font-serif bg-[#22d3ee]/50">
                     Universidad Autonoma de Aguascalientes.
-              </h2>
+              </h1>
               <small className="block font-medium">
                 2018-2023 
               </small>
