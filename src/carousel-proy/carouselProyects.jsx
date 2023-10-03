@@ -117,7 +117,7 @@ function touchEnd(ev){
 }
 
 export const CarouselProyecs = () =>{
-
+    
     useEffect(()=>{
         carouselEvents();
     },[]);
@@ -131,7 +131,7 @@ export const CarouselProyecs = () =>{
                 <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden" >
                     <h3 className='absolute text-white top-2 z-30 text-center w-full font-bold italic ' id='proyect-title'>title</h3>
                     <img id='wallpaper' src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} className='fondo absolute h-full' alt="" />
-                    <button id='previous' className=" absolute -z-40 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
+                    <button id='previous' className=" absolute z-40 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
                         &#60;
                     </button>
                     <button id='next' className="absolute z-40 top-1/2 right-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:-translate-x-2" onClick={handleNextButton}>

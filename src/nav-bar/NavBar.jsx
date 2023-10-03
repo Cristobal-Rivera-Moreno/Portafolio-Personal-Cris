@@ -36,6 +36,13 @@ export function NavBar() {
   }else{
     navigation[2].current = true;
   }
+  if (window.Cypress) {
+    // we are running in Cypress
+    // so do something different here
+    window.env = 'test'
+  } else {
+    // we are running in a regular ol' browser
+  }
   return (
     
     <Disclosure as="nav" className="bg-gray-600">
@@ -43,7 +50,7 @@ export function NavBar() {
         <>
         <div className="flex hidden w-full absolute z-50 justify-center" id="pdfContainer">
           <button className="w-10 h-10 rounded-full absolute right-0 top-5 bg-black text-green-400 animate-bounce hover:animate-none hover:top-0" onClick={handleSummary}><span className="animate-pulse">🗙</span></button>
-          <iframe src="src/assets/summary.pdf" style={{width:"90vw", height:"100vh"}} >
+          <iframe src={import.meta.env.VITE_PATH+"/summary_page.jpg?raw=true"} style={{width:"90vw", height:"100vh"}} >
           </iframe>
           </div>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
