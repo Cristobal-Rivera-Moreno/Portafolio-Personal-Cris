@@ -106,17 +106,19 @@ export function NavBar() {
                 <button
                   type="button"
                   className="ml-4 icon relative rounded-full hover:text-gray-300 hover:font-extrabold w-8 h-8 text-xl font-bold"
-                  onClick={handleSummary}
+                  
                 >
-                  <span className="sr-only">View notifications</span>
+              
+     
+                 
                   {/* {<BellIcon className="h-6 w-6" aria-hidden="true" />} */}
-                  <a href="#" className= "flex justify-center   icon rounded-full w-10 h-10 github">
+                  <a href="https://drive.google.com/file/d/1HgBuKYKooOMlVAJoTMMcDMOmRIeNOJsy/view?usp=sharing" target="_blanck" className= "flex justify-center   icon rounded-full w-10 h-10 github">
                     <span className="text-xl font-bold ">🗎</span>
                   
                   <span className="tooltip">Curriculum</span>
                   </a>
                 </button>
-
+                
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
