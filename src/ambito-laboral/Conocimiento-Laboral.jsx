@@ -1,16 +1,16 @@
 
 const info = [
-    "C y C++",
-    "Java",
-    "Python",
-    "Javascript(incluyendo typescript) con su framework Angular y su libreria React JS",
-    "Entorno de desarrollo para JS Node JS",
-    "Golang",
-    "C#",
-    "PHP y su framework Laravel",
-    "HTML y CSS",
-    "Sql Server,PostgreSQL y MongoDB",
-    "Arquitectura rest full"
+    {text:"C y C++",icon:'c++.png'},
+    {text:"Java"   ,icon:'java.svg'},
+    {text:"Python" ,icon:'python.png'},
+    {text:"Javascript(incluyendo typescript) con su framework Angular y su libreria React JS"            ,icon:'javascript.png'},
+    {text:"Entorno de desarrollo para JS Node JS",icon:'nodejs.png'},
+    {text:"Golang",icon:'golang.png' },
+    {text:"C#"    ,icon:'.net.png'},
+    {text:"PHP y su framework Laravel",icon:'php.svg'},
+    {text:"HTML y CSS",icon:'html5.png'},
+    {text:"Sql Server,PostgreSQL y MongoDB",icon:'sql.png'},
+    {text:"Arquitectura rest full",icon:'api.png'}
 
 ]
 
@@ -34,8 +34,8 @@ export const ConocimientoLaboral = ()=>{
                             info.map((val,i) => 
                                 <tr key={i} className="border-2 border-cyan-400/80 ">
                                     <td>
-                                        {val} 
-                                        <img src={import.meta.env.VITE_PATH + 'java-icon.svg?raw=true'} alt="" className="inline-block w-8 h-8 bg-black/30 rounded-full ml-2"/>
+                                        {val.text} 
+                                        <img src={import.meta.env.VITE_PATH +val.icon +'?raw=true'} alt="" className="inline-block w-8 h-8 bg-black/30 rounded-full ml-2"/>
                                     </td>
                                 </tr>)
                         }
