@@ -15,7 +15,7 @@ export const ExperienciaLaboral = ()=>{
               <small className="block font-medium">
                 Feb-Dic 2023 Grupo Sinco tech and business innnovation
               </small>
-              <p className="text-justify pl-16 pr-16">
+              <p className="text-justify p-2 ">
                 En mi estadia utilice tecnologias como Angular, C#,
                 Laravel, J Query, javascript, PHP, .NET, Sql Server y
                 Postgres SQL.

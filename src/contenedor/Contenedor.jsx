@@ -11,9 +11,11 @@ import { ProyectosEducativo } from "../ambito-educativo/Proyectos-Educativo";
 import { HobbiesPersonal } from "../ambito-personal/Hobbies-Personal";
 import "./contenedor.css";
 import { SCOPES } from "../shared/const";
+import { Udemy } from "../ambito-educativo/Udemy";
+import { ValoresPersonal } from "../ambito-personal/Valores-Personal";
 const sectionsLab = [ <AspiracionesLaborales/>,<ExperienciaLaboral/>,<ConocimientoLaboral/>,<HabilidadesLaborales/> ]; 
-  const sectionsEdu = [<ISCEducativo/>,<ProyectosEducativo/>];
-  const sectionsPer = [<HobbiesPersonal/>];
+  const sectionsEdu = [<ISCEducativo/>,<Udemy/>];
+  const sectionsPer = [<HobbiesPersonal/>,<ValoresPersonal/>];
 const imgs = [
 
   {src:"src/assets/images/angular.png",class:"w-10 inline-block col-start-2 col-span-1 rotate-12"},
@@ -44,7 +46,7 @@ export const Contenedor = ({ children,itemsSideBar,ambito }) => {
       className="relative p-6  w-full "
       datatime={"s"}
     >
-      <div className="relative cont  sm:h-auto overflow-hidden rounded-lg md:h-96">
+      <div className="relative cont  sm:h-auto overflow-hidden rounded-lg md:h-[26rem]">
         <div className="flex h-full phone bg-blue-400/[0.25]">
           <div className="w-1/4 h-full bg-red-300 sub-cont">
             <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>

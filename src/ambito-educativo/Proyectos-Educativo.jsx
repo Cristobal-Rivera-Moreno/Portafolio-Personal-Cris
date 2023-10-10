@@ -25,37 +25,7 @@ export const ProyectosEducativo = ()=>{
     const [proySelected,setProySelected] = useState(0);
     return(
         <>
-            <nav className="flex justify-between m-8">
-                <a href="">
-                    Animalitos a casa
-                </a>
-                <a href="">
-                
-                    Heroes
-                
-                </a>
-                <a href="">
-                
-                    PokeDex
-            
-                </a>
-            </nav>
 
-            <article>
-                <a href="">
-                    <img src="" alt="" />
-                </a>
-                <div>
-                    <h3>
-
-                    </h3>
-                    <p>
-
-                    </p>
-                </div>
-            </article>
-        
-        
         </>
 
 

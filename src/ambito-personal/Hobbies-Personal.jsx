@@ -7,7 +7,7 @@ export const HobbiesPersonal = ()=>{
          <h1 className="text-center font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
          💫Pasatiempos
               </h1>
-            <ol>
+            <ol className="text-left p-2">
                 <li>
                 🌟
                 Programar pequeñas aplicaciones.

@@ -50,8 +50,7 @@ export function NavBar() {
         <>
         <div className="flex hidden w-full absolute z-50 justify-center" id="pdfContainer">
           <button className="w-10 h-10 rounded-full absolute right-0 top-5 bg-black text-green-400 animate-bounce hover:animate-none hover:top-0" onClick={handleSummary}><span className="animate-pulse">🗙</span></button>
-          <iframe src={import.meta.env.VITE_PATH+"/summary_page.jpg?raw=true"} style={{width:"90vw", height:"100vh"}} >
-          </iframe>
+        
           </div>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative h-auto flex flex-col sm:flex-col sm:h-auto md:h-24 p-6 items-center justify-between">
@@ -105,17 +104,22 @@ export function NavBar() {
                 <h1 className="font-bold">Ingeniero en sistemas computacionales.</h1>
                 <button
                   type="button"
-                  className="ml-4 icon relative rounded-full hover:text-gray-300 hover:font-extrabold w-8 h-8 text-xl font-bold"
+                  className="ml-4 icon relative rounded-full hover:text-gray-300 hover:font-extrabold w-8 h-8 text-xl  "
                   
                 >
               
      
                  
                   {/* {<BellIcon className="h-6 w-6" aria-hidden="true" />} */}
-                  <a href="https://drive.google.com/file/d/1HgBuKYKooOMlVAJoTMMcDMOmRIeNOJsy/view?usp=sharing" target="_blanck" className= "flex justify-center   icon rounded-full w-10 h-10 github">
-                    <span className="text-xl font-bold ">🗎</span>
+                  <a href="https://drive.google.com/file/d/1HgBuKYKooOMlVAJoTMMcDMOmRIeNOJsy/view?usp=sharing" target="_blanck" className= "flex justify-center items-center  icon rounded-full w-10 h-10 github">
+                    <span className="text-xl font-bold ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+
+                    </span>
                   
-                  <span className="tooltip">Curriculum</span>
+                  <span className="tooltip font-semibold">Curriculum</span>
                   </a>
                 </button>
                 

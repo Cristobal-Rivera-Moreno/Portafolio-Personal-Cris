@@ -3,9 +3,10 @@ import { SideBar } from '../side-bar/SideBar';
 import { ISCEducativo } from './ISC-Educativo';
 import { ProyectosEducativo } from './Proyectos-Educativo';
 import { CarouselProyecs } from '../carousel-proy/carouselProyects';
+import { Udemy } from './Udemy';
 export const itemsSideBar = [
-  { icono:'💻', texto:'Ingenieria en sistemas computacionales ISC.' },
-  { icono:'💻', texto:'Proyectos realizados como estudiante.' },
+  { icono:'💻', texto:'Ing.En sistemas computacionales' },
+  { icono:'💻', texto:'Cursos en Udemy.' },
   
 ] 
 export const AmbitoEducativo = () => {
@@ -33,7 +34,7 @@ export const AmbitoEducativo = () => {
              
               {
                 seccion === 1 ? <ISCEducativo></ISCEducativo>:
-                seccion === 2 ? <ProyectosEducativo></ProyectosEducativo>:0
+                seccion === 2 ? <Udemy></Udemy>:0
               }
             </div>
 

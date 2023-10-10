@@ -8,17 +8,20 @@ const arrayProys = [
     {
         title : 'Animalitos a casa',
         text : 'Aplicación realizada con HTML, css y javascript con fines educativos, destinada a niños.',
-        img : ''
+        img : '',
+        link:'https://programacionweb-uaa.github.io/MiniProyecto-Tecnologias-web-/Proyecto/index.html'
     },
     {
         title : 'Heroes',
         text : 'Aplicación realizada con Angular. Su finalidad es brindar información relevante sobre distintos heroes de el universo Mervel y DC.',
-        img : ''
+        img : '',
+        link:'https://tecnologias-web-uaa.github.io/Mini-Proyecto-2-Tecnologias-Web/home'
     },
     {
         title : 'Pokedex',
         text : 'Aplicación realizada con React JS y tailwind como framework css, consumiendo API de un servicio web.',
-        img : ''
+        img : '',
+        link:'https://cristobal-rivera-moreno.github.io/Poke-api/'
     }
 
 ]
@@ -34,8 +37,10 @@ let proyectTitle
 let description  
 let firstChild 
 let lastChild  
+let link
 function carouselEvents(){
     previousButton = document.getElementById('previous');
+    link           = document.getElementById('link'); 
     nextButton     = document.getElementById('next');
     wallpaper      = document.getElementById('wallpaper');
     carousel       = document.getElementById('carousel');
@@ -68,12 +73,15 @@ if( sibling ){
  activeChild.nextElementSibling.classList.remove('hidden'); 
  wallpaper.setAttribute('src',activeChild.nextElementSibling.firstElementChild.getAttribute('src')); 
  i+=1;
+ 
 }else{
  firstChild.classList.remove('hidden');
  wallpaper.setAttribute('src',firstChild.firstChild.getAttribute('src'));
  i = 0;
+ 
 }
-
+link.setAttribute('href',arrayProys[i].link)
+ 
 proyectTitle.innerHTML = arrayProys[i].title;
 description.innerHTML = arrayProys[i].text;
 
@@ -93,6 +101,7 @@ function handlePreviousButton(ev){
      i = arrayProys.length-1;
      
  }
+    link.setAttribute('href',arrayProys[i].link)
     proyectTitle.innerHTML = arrayProys[i].title;
     description.innerHTML = arrayProys[i].text; 
  
@@ -130,11 +139,16 @@ export const CarouselProyecs = () =>{
                 </header>
                 <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden" >
                     <h3 className='absolute text-white top-2 z-30 text-center w-full font-bold italic ' id='proyect-title'>title</h3>
+                    <section className="relative">
+                        <a id="link" href={arrayProys[0].link} target='_blanck' className='absolute z-30 top-10 bg-white/50 w-8 h-8 rounded-full icon facebook animate-bounce'>👀
+                        <span className='tooltip left-0'>Visitar</span></a>
+                      
+                    </section>
                     <img id='wallpaper' src={import.meta.env.VITE_PATH + '/Animalitos.gif?raw=true'} className='fondo absolute h-full' alt="" />
-                    <button id='previous' className=" absolute z-40 top-1/2 left-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
+                    <button id='previous' className=" absolute z-40 top-1/2 left-2 w-8 h-8 rounded-full bg-black text-green-400 text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-slate-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:translate-x-2" onClick={handlePreviousButton}>
                         &#60;
                     </button>
-                    <button id='next' className="absolute z-40 top-1/2 right-2 w-8 h-8 rounded-full bg-gray-400/50 text-white text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-cyan-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:-translate-x-2" onClick={handleNextButton}>
+                    <button id='next' className="absolute z-40 top-1/2 right-2 w-8 h-8 rounded-full bg-black text-green-400 text-bold text-xl hover:scale-110 hover:font-black border-2 border-solid border-slate-400 hover:shadow-lg hover:w-10 hover:h-10 hover:transition-all hover:-translate-x-2" onClick={handleNextButton}>
                         &#62;
                     </button>
                     <div className="picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
@@ -149,8 +163,8 @@ export const CarouselProyecs = () =>{
                     </div>
                     
                 </div>
-                <footer className=''>
-                    <p id='description'>
+                <footer className='bg-slate-800 '>
+                    <p id='description' className='text-justify p-2'>
                         desc
                     </p>
                 </footer>

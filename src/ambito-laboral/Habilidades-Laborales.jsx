@@ -7,16 +7,16 @@ export const HabilidadesLaborales = () => {
              🛠 Habilidades
               </h1>
              
-              <ol className="text-justify pl-16 pr-16 list-disc">
+              <ol className="text-justify p-2 list-disc">
               
-                <li>Trabajo en equipo</li>
-                <li>Proactivo</li>
-                <li>Paciente</li>
-                <li>Realista</li>
-                <li>Auto critico</li>
-                <li>Adaptación a cambios</li>
-                <li>Capacidad analítica</li>
-                <li>Deseos de aprender </li>
+                <li>🧰 Trabajo en equipo</li>
+                <li>🧰 Proactivo</li>
+                <li>🧰 Paciente</li>
+                <li>🧰 Realista</li>
+                <li>🧰 Auto critico</li>
+                <li>🧰 Adaptación a cambios</li>
+                <li>🧰 Capacidad analítica</li>
+                <li>🧰 Deseos de aprender </li>
                 
                 
                 

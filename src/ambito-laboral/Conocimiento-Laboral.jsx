@@ -17,17 +17,19 @@ const info = [
 export const ConocimientoLaboral = ()=>{
     return (
         <>
-             <h1 className="font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
+           <h1 className="font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
              🧠 Conocimiento
-              </h1>
+            </h1>
+        <div className="p-2">
+          
              
-                <table className="m-auto">
+                <table className="m-auto ">
                     <thead>
                         <tr>
                             <th>Tecnologias</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         { 
                             info.map((val,i) => 
                                 <tr key={i} className="border-2 border-cyan-400/80 ">
@@ -42,7 +44,8 @@ export const ConocimientoLaboral = ()=>{
 
                     </tfoot>
                 </table>
-                         
+            </div>                                    
+
                
         
         
