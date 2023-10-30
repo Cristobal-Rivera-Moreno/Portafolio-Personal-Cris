@@ -10,21 +10,51 @@ export const ExperienciaLaboral = ()=>{
                 💼 Experiencia Laboral
               </h1>
               <h2 className="font-semibold font-serif">
-                Becario de desarrollo web con distintas tecnologias(Full stack).
+                Ingeniero de Software
               </h2>
               <small className="block font-medium">
-                Feb-Dic 2023 Grupo Sinco tech and business innnovation
+                Feb 2023(actúal) Grupo Sinco tech and business innnovation
               </small>
               <p className="text-justify p-2 ">
-                En mi estadia utilice tecnologias como Angular, C#,
-                Laravel, J Query, javascript, PHP, .NET, Sql Server y
-                Postgres SQL.
+                Uso de tecnologias como <strong>Angular</strong>, <strong>C#</strong>,
+                <strong>Laravel(PHP)</strong>, <strong>J Query</strong>, <strong>javascript</strong> <strong>.NET</strong>,<strong> Sql Server</strong> y 
+                <strong> Postgres SQL</strong> para desarrollar aplicaciones.
                 <br />
-                Participe en proyectos, complementados en conjunto con
-                paqueterias de Aspel, relacionados con el control de producción{" "}
+                Actividades asignadas:
+               
               </p>
-        
-        
+              <div className="text-justify p-2">
+              <ul className="pl-6">
+                  <li>✅ Analizar requerimientos.</li>
+                  <li>✅ Uso de SCRUM como framework ágil para desarrollo de sistemas.</li>
+                  <li>✅ Implementar y proponer funcionalidad basada en los requerimientos.</li>
+                  <li>✅ Administrar bases de datos.</li>
+                </ul>
+                </div>
+
+
+
+                <h2 className="font-semibold font-serif">
+                Asistente en soporte técnico(servicio social)
+              </h2>
+              <small className="block font-medium">
+                Ago 2022 - Feb 2023 UAA departamento de redes
+              </small>
+              <p className="text-justify p-2 ">
+                
+                
+                Actividades asignadas:
+               
+              </p>
+              <div className="text-justify p-2">
+              <ul className="pl-6">
+                  <li>✅ Instalar paqueterias y equipos, como: Office, UAA apps y perifericos.</li>
+                  <li>✅ Apoyar a administrativos en el uso de tecnologias.</li>
+                  <li>✅ Diagnosticar problemas en sub-redes.</li>
+                  <li>✅ Mantenimiento a equipos de computo e impresoras.</li>
+                </ul>
+                </div>
+
         </>
 
 

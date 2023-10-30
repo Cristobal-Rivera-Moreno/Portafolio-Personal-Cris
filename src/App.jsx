@@ -20,7 +20,7 @@ function App() {
     <>
      <NavBar/>
      <Routes>
-        <Route path="/Portafolio-Personal-Cris" element={ <Contenedor itemsSideBar={itemsSideBarL} ambito={SCOPES.LABORAL}/> } />
+        <Route  path="/Portafolio-Personal-Cris" element={ <Contenedor itemsSideBar={itemsSideBarL} ambito={SCOPES.LABORAL}/> } />
         
         <Route path="/Portafolio-Personal-Cris/ambito-laboral" element={ <Contenedor itemsSideBar={itemsSideBarL} ambito={SCOPES.LABORAL}/> } />
         <Route path="/Portafolio-Personal-Cris/ambito-educativo" element={<div> <Contenedor itemsSideBar={itemsSideBarE} ambito={SCOPES.ACADEMICO}/> </div>} />

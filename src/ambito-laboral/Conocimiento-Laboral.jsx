@@ -35,7 +35,7 @@ export const ConocimientoLaboral = ()=>{
                                 <tr key={i} className="border-2 border-cyan-400/80 ">
                                     <td>
                                         {val.text} 
-                                        <img src={import.meta.env.VITE_PATH +val.icon +'?raw=true'} alt="" className="inline-block w-8 h-8 bg-black/30 rounded-full ml-2"/>
+                                        {/* <img src={import.meta.env.VITE_PATH +val.icon +'?raw=true'} alt="" className="inline-block w-8 h-8 bg-black/30 rounded-full ml-2"/> */}
                                     </td>
                                 </tr>)
                         }

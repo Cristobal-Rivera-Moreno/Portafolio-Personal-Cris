@@ -48,7 +48,7 @@ export const Contenedor = ({ children,itemsSideBar,ambito }) => {
     >
       <div className="relative cont  sm:h-auto overflow-hidden rounded-lg md:h-[26rem]">
         <div className="flex h-full phone bg-blue-400/[0.25]">
-          <div className="w-1/4 h-full bg-red-300 sub-cont">
+          <div className="w-1/4 h-full sub-cont">
             <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>
           </div>
           {/* Here Info */}
@@ -60,7 +60,7 @@ export const Contenedor = ({ children,itemsSideBar,ambito }) => {
             }
           </div>
 
-          <div className="w-1/4 grid  h-96 sm:h-auto  bg-lime-100/[0.25] sub-cont">
+          <div className="w-1/4 grid  h-96 sm:h-auto  bg-slate-800 sub-cont">
               <CarouselProyecs></CarouselProyecs>           
           
           </div>

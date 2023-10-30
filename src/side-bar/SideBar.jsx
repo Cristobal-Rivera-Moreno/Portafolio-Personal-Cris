@@ -2,15 +2,15 @@ import {Route, Link, Routes, useLocation} from 'react-router-dom';
 export const SideBar = ({ children,changeSeccion,items }) => {
   const location = useLocation()
   const values = items.map((val,i)=>
-  <li key={i} onMouseOver={()=>{document.getElementsByClassName('icon')[i].classList.add('animate-bounce')} }onMouseLeave={()=>{document.getElementsByClassName('icon')[i].classList.remove('animate-bounce')}} onClick={()=>changeSeccion(i+1)}>
+  <li key={i} onMouseOver={()=>{document.getElementsByClassName('icon-sidebar')[i].classList.add('animate-bounce')} }onMouseLeave={()=>{document.getElementsByClassName('icon-sidebar')[i].classList.remove('animate-bounce')}} onClick={()=>changeSeccion(i+1)}>
   <a
     
     className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group cursor-pointer"
   >
-   <span className="icon"> 
+   <span className="icon-sidebar"> 
       {val.icono} 
    </span>
-    <span className="ml-3">{val.texto}</span>
+    <span  className="ml-3">{val.texto}</span>
   </a>
 </li>
   );

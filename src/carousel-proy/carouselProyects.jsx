@@ -13,7 +13,7 @@ const arrayProys = [
     },
     {
         title : 'Heroes',
-        text : 'Aplicación realizada con Angular. Su finalidad es brindar información relevante sobre distintos heroes de el universo Mervel y DC.',
+        text : 'Aplicación hecha con Angular. Su finalidad es brindar información relevante sobre distintos heroes de el universo Mervel y DC.',
         img : '',
         link:'https://tecnologias-web-uaa.github.io/Mini-Proyecto-2-Tecnologias-Web/home'
     },
