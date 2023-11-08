@@ -13,9 +13,10 @@ import "./contenedor.css";
 import { SCOPES } from "../shared/const";
 import { Udemy } from "../ambito-educativo/Udemy";
 import { ValoresPersonal } from "../ambito-personal/Valores-Personal";
+import { MasSobreMi } from "../ambito-personal/MasSobreMi";
 const sectionsLab = [ <AspiracionesLaborales/>,<ExperienciaLaboral/>,<ConocimientoLaboral/>,<HabilidadesLaborales/> ]; 
   const sectionsEdu = [<ISCEducativo/>,<Udemy/>];
-  const sectionsPer = [<HobbiesPersonal/>,<ValoresPersonal/>];
+  const sectionsPer = [<HobbiesPersonal/>,<ValoresPersonal/>,<MasSobreMi/>];
 const imgs = [
 
   {src:"src/assets/images/angular.png",class:"w-10 inline-block col-start-2 col-span-1 rotate-12"},

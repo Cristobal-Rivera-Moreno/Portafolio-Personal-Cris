@@ -133,7 +133,7 @@ export const CarouselProyecs = () =>{
 
     return (
         <>
-                <main className=''>
+                <main className='overflow-auto'>
                 <header>
                     <h1 className="text-center font-mono font-semibold text-lg bg-[#2187ab]">Proyectos realizados</h1>
                 </header>

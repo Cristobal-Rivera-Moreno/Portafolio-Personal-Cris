@@ -17,7 +17,7 @@ export function Footer(){
         
 <footer className="bg-white dark:bg-gray-900">
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 relative">
-        <h3 className=' text-center sm:text-end pr-10 animate-bounce font-semibold '>Contact me</h3>
+        <h3 className=' text-center sm:text-end pr-10 animate-bounce font-semibold '>Contáctame</h3>
         {/* <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="https://flowbite.com/" class="flex items-center">

@@ -6,7 +6,7 @@ export const Udemy = ({children})=>{
             <main>
                 <header>
                 <h1 className="font-semibold text-lg font-serif bg-[#22d3ee]/50">
-                     Cursos incursionados en Udemy   
+                     Cursos hechos en Udemy   
                 </h1>
                 </header>
                 <section className="p-2">
