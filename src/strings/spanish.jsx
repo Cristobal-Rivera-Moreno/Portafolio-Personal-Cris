@@ -1,7 +1,7 @@
 
 
 
-export const MSG = {
+export const SpanishStrings = {
     MSG_ID_1 : 'Cristobal Rivera Moreno. Ingeniero en sistemas computacionales.',
     MSG_ID_2 : 'Ambito educativo',
     MSG_ID_3 : 'Ambito laboral',
@@ -10,7 +10,7 @@ export const MSG = {
     MSG_ID_6 : 'Experiencia Laboral',
     MSG_ID_7 : 'Proyectos Realizados',
     MSG_ID_8 : 'Aspiraciones',
-    MSG_ID_9 : 'Experiencia Laboral',
+    MSG_ID_9 : 'Aguascalientes, México',
     MSG_ID_10 : 'Conocimiento',
     MSG_ID_11 : 'Habilidades',
     MSG_ID_12 : '👋 Hola, mi nombre es Cristobal Rivera Moreno, soy un apasionado por la tenología es por eso que mis aspiraciones se centran en seguirme desarrollando tanto personal como profesionalmente, aprendiendo de las experiencias y de los demás en el mundo tecnológico, y de esta forma apoyar a todo aquel que lo necesite a través de mis habilidades.\nEstoy conciente que las TIC\'s en la actualidad son de suma importancia es por eso que día a día trato de capacitarme con las nuevas novedades sobre un buen manejo de la computación, datos y seguridad de los mismos para seguir innovando en la sociedad.',
@@ -25,8 +25,69 @@ export const MSG = {
     MSG_ID_21 : 'Desarrollador De Aplicaciones Mobiles Jr',
     MSG_ID_22 : 'En mi estadia he participado en un proyecto destinado al control de aires acondicionados de la empresa Lennox, en el cual he sido miembro del equipo de desarrollo de la plataforma Android.\nUso de tecnologias como: Android Studio, Kotlin, Java, Azure DevOps, BLE (Bluetooth Low Energy) y Wifi Direct.',
     MSG_ID_23 : '✅ Solucionar Bugs.\n✅ Implementar nuevas funcionalidades.\n✅ Analizar logs.\n✅ Estar en contacto con el equipo.\n✅ ',
-    MSG_ID_24 : 'Feb 2024 - Currently'
+    MSG_ID_24 : 'Feb 2024 - Currently',
+    MSG_ID_25 : 'C y C++',
+    MSG_ID_26 : 'Java',
+    MSG_ID_27 : 'Python',
+    MSG_ID_28 : 'Javascript',
+    MSG_ID_29 : 'Typescript',
+    MSG_ID_30 : 'Angular',
+    MSG_ID_31 : 'React JS', 
+    MSG_ID_32 : 'Node JS',
+    MSG_ID_33 : 'Golang',
+    MSG_ID_34 : 'C#',
+    MSG_ID_35 : 'PHP',
+    MSG_ID_36 : 'Laravel',
+    MSG_ID_37 : 'HTML',
+    MSG_ID_38 : 'CSS',
+    MSG_ID_39 : 'Manejadores de Bases de datos como: SQL Server, PostresSQL y MongoDB',
+    MSG_ID_40 : 'Arquitectura para APIs Rest Full',
+    MSG_ID_41 : 'Arquitectura para APIs GraphQL',
+    MSG_ID_42 : 'Trabajo en equipo',
+    MSG_ID_43 : 'Proactividad', 
+    MSG_ID_44 : 'Paciente',
+    MSG_ID_45 : 'Realista',
+    MSG_ID_46 : 'Auto critico',
+    MSG_ID_47 : 'Adaptibilidad a cambios',
+    MSG_ID_48 : 'Capacidad analitíca',
+    MSG_ID_49 : 'Curiosidad en temas tecnologicos',
+    MSG_ID_50 : '© 2023 CRM™. Todos los derechos reservados.',
+    MSG_ID_51 : 'Contáctame',
+    MSG_ID_52 : 'Curriculum',
+    MSG_ID_53 : 'LinkedIn',
+    MSG_ID_54 : 'Correo',
+    MSG_ID_55 : 'Github'
     
 
+
+}
+
+
+export const EnglishStrings = {
+    MSG_ID_1 : 'Cristobal Rivera Moreno. Computer Systems Engineer.',
+    MSG_ID_2 : 'Education Scope',
+    MSG_ID_3 : 'Professional Scope',
+    MSG_ID_4 : 'Personal Scope',
+    MSG_ID_5 : 'Menu',
+    MSG_ID_6 : 'Career',
+    MSG_ID_7 : 'Projects Done',
+    MSG_ID_8 : 'Aspirations',
+    MSG_ID_9 : 'Experiencia Laboral',
+    MSG_ID_10 : 'Knowledge',
+    MSG_ID_11 : 'Skills',
+    MSG_ID_12 : '👋 Hi, my name is Cristobal Rivera Moreno, I am a technology fanatic that is why my aspirations focuses on keeping improving my skills in the area, learning from experiences and another engineers in the technologic world.\nI am aware of the TIC\'s are currently a great tool to fix problems in the society, therefore, I try keeping updated on the branch and in this way helping people out, putting in practice my insighs.',
+    MSG_ID_13 : 'Ingeniero de Software',
+    MSG_ID_14 : 'Feb 2023 Grupo Sinco tech and business innnovationFeb 2023(actúal) Grupo Sinco tech and business innnovation',
+    MSG_ID_15 : 'Uso de tecnologias como Angular, C#,Laravel(PHP), J Query, javascript .NET, Sql Server y Postgres SQL para desarrollar aplicaciones.',
+    MSG_ID_16 : 'Asistente En Soporte Técnico (servicio social)',
+    MSG_ID_17 : 'Ago 2022 - Feb 2023 UAA departamento de redes',
+    MSG_ID_18 : 'Actividades Asignadas:',
+    MSG_ID_19 : '✅ Instalar paqueterias y equipos, como: Office, UAA apps y perifericos.\n✅ Apoyar a administrativos en el uso de tecnologias.\n✅ Diagnosticar problemas en sub-redes.\n✅ Mantenimiento a equipos de computo e impresoras.',
+    MSG_ID_20 : '✅ Analizar requerimientos.\n✅ Uso de SCRUM como framework ágil para desarrollo de sistemas.\n✅ Implementar y proponer funcionalidad basada en los requerimientos.\n✅ Administrar bases de datos.',
+    MSG_ID_21 : 'Desarrollador De Aplicaciones Mobiles Jr',
+    MSG_ID_22 : 'En mi estadia he participado en un proyecto destinado al control de aires acondicionados de la empresa Lennox, en el cual he sido miembro del equipo de desarrollo de la plataforma Android.\nUso de tecnologias como: Android Studio, Kotlin, Java, Azure DevOps, BLE (Bluetooth Low Energy) y Wifi Direct.',
+    MSG_ID_23 : '✅ Solucionar Bugs.\n✅ Implementar nuevas funcionalidades.\n✅ Analizar logs.\n✅ Estar en contacto con el equipo.\n✅ ',
+    MSG_ID_24 : 'Feb 2024 - Currently'
+    
 
 }
