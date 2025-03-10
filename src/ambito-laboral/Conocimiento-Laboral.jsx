@@ -17,7 +17,7 @@ const info = [
 export const ConocimientoLaboral = ()=>{
     return (
         <>
-           <h1 className="font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
+           <h1 className="font-mono font-semibold text-lg dark:bg-gray-900 text-white w-full">
              🧠 Conocimiento
             </h1>
         <div className="p-2">

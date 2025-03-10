@@ -135,7 +135,7 @@ export const CarouselProyecs = () =>{
         <>
                 <main className='overflow-auto'>
                 <header>
-                    <h1 className="text-center font-mono font-semibold text-lg bg-[#2187ab]">Proyectos realizados</h1>
+                    <h1 className="text-center font-mono font-semibold text-lg dark:bg-gray-900">Proyectos realizados</h1>
                 </header>
                 <div id='carousel' className="carousel relative h-3/4 w-full overflow-hidden" >
                     <h3 className='absolute text-white top-2 z-30 text-center w-full font-bold italic ' id='proyect-title'>title</h3>

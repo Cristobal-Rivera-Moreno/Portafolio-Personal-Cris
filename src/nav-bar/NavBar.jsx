@@ -45,7 +45,7 @@ export function NavBar() {
   }
   return (
     
-    <Disclosure as="nav" className="bg-gray-600">
+    <Disclosure as="nav" className="dark:bg-gray-900">
       {({ open }) => (
         <>
         <div className="flex hidden w-full absolute z-50 justify-center" id="pdfContainer">

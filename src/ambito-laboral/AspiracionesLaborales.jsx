@@ -6,7 +6,7 @@ export const AspiracionesLaborales = () =>{
 
     return (
         <>
-             <h1 className="text-center font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
+             <h1 className="text-center font-mono font-semibold text-lg dark:bg-gray-900 text-white w-full">
              📈 Aspiraciones
               </h1>
               <p className="text-justify p-2">

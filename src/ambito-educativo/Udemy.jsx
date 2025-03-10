@@ -5,7 +5,7 @@ export const Udemy = ({children})=>{
         <>
             <main>
                 <header>
-                <h1 className="font-semibold text-lg font-serif bg-[#22d3ee]/50">
+                <h1 className="font-semibold text-lg font-mono dark:bg-gray-900">
                      Cursos hechos en Udemy   
                 </h1>
                 </header>

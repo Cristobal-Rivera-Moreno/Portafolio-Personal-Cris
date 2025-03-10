@@ -53,7 +53,7 @@ export const Contenedor = ({ children,itemsSideBar,ambito }) => {
             <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>
           </div>
           {/* Here Info */}
-          <div className="w-2/4 h-full overflow-auto bg-[#2187ab]/30 sub-cont">
+          <div className="w-2/4 h-full overflow-auto dark:bg-gray-900 sub-cont">
             {
               sections.map( (section,i )=>
                 seccion == i+1 && <div key={i+1}>{section}</div>  

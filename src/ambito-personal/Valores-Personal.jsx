@@ -3,7 +3,7 @@
 export const ValoresPersonal = ({children})=>{
     return (
         <>
-            <h1 className="text-center font-mono font-semibold text-lg bg-[#22d3ee]/50 text-white w-full">
+            <h1 className="text-center font-mono font-semibold text-lg dark:bg-gray-900 text-white w-full">
             💭 Valores
             </h1>
              
