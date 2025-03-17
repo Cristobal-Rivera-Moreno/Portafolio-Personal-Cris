@@ -14,9 +14,9 @@ import { SCOPES } from "../shared/const";
 import { Udemy } from "../ambito-educativo/Udemy";
 import { ValoresPersonal } from "../ambito-personal/Valores-Personal";
 import { MasSobreMi } from "../ambito-personal/MasSobreMi";
-const sectionsLab = [ <AspiracionesLaborales/>,<ExperienciaLaboral/>,<ConocimientoLaboral/>,<HabilidadesLaborales/> ]; 
-  const sectionsEdu = [<ISCEducativo/>,<Udemy/>];
-  const sectionsPer = [<HobbiesPersonal/>,<ValoresPersonal/>,<MasSobreMi/>];
+
+import {NavBar} from '../nav-bar/NavBar'
+
 const imgs = [
 
   {src:"src/assets/images/angular.png",class:"w-10 inline-block col-start-2 col-span-1 rotate-12"},
@@ -31,9 +31,12 @@ const imgs = [
   {src:"src/assets/images/sql.png",class:"w-10 h-10 inline-block col-start-5 col-span-1 row-start-2 rotate-12"},
   {src:"src/assets/images/.net.jpg",class:"w-10 h-10 inline-block col-start-5 col-span-1 row-start-6 rotate-12"},
 ];
-export const Contenedor = ({ children,itemsSideBar,ambito }) => {
+export const Contenedor = ({ children,itemsSideBar,ambito, currLanguage }) => {
   const [seccion,setSeccion] = useState(1);
-  
+  console.log("currLanguage: "+ currLanguage)
+  const sectionsLab = [ <AspiracionesLaborales currLanguage={currLanguage}/>,<ExperienciaLaboral/>,<ConocimientoLaboral/>,<HabilidadesLaborales/> ]; 
+  const sectionsEdu = [<ISCEducativo/>,<Udemy/>];
+  const sectionsPer = [<HobbiesPersonal/>,<ValoresPersonal/>,<MasSobreMi/>];
   function changeSeccion(val){
     setSeccion(val);
     
@@ -44,10 +47,10 @@ export const Contenedor = ({ children,itemsSideBar,ambito }) => {
     <>
     <div
       id="indicators-carousel"
-      className="relative p-6  w-full "
+      className="relative p-6 w-full mt-32"
       datatime={"s"}
     >
-      <div className="relative cont  sm:h-auto overflow-hidden rounded-lg md:h-[26rem]">
+      <div className="relative cont sm:h-auto overflow-hidden rounded-lg md:h-[26rem]">
         <div className="flex h-full phone bg-blue-400/[0.25]">
           <div className="w-1/4 h-full sub-cont">
             <SideBar items={itemsSideBar} changeSeccion={changeSeccion}></SideBar>

@@ -26,7 +26,7 @@ export const SideBar = ({ children,changeSeccion,items }) => {
          <h1 className="text-center font-mono font-semibold text-lg dark:bg-gray-900 text-white w-full mb-1">
                 💼 Menu
          </h1>
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 bg-[#1c2230]">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-[#1c2230]">
           <ul className="space-y-2 font-medium ">
            {values}
           </ul>
