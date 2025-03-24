@@ -199,13 +199,13 @@ export const CarouselProyecs = ({currLanguage}) =>{
                         <img src={import.meta.env.VITE_PATH + '/pokemon.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     <div className="hidden picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
-                        <img src={import.meta.env.VITE_PATH + '/pokemon.gif?raw=true'} className=" w-full h-full" alt="" />
+                        <img src={import.meta.env.VITE_PATH + '/SmartTechApp.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     <div className="hidden picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
-                        <img src={import.meta.env.VITE_PATH + '/pokemon.gif?raw=true'} className=" w-full h-full" alt="" />
+                        <img src={import.meta.env.VITE_PATH + '/HO.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     <div className="hidden picture absolute top-1/4 z-10" onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd}>
-                        <img src={'src/assets/images/prucer.gif'} className=" w-full h-full" alt="" />
+                        <img src={import.meta.env.VITE_PATH + '/prucxer.gif?raw=true'} className=" w-full h-full" alt="" />
                     </div>
                     
                 </div>
