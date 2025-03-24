@@ -10,15 +10,11 @@ import { ConocimientoLaboral } from "../ambito-laboral/Conocimiento-Laboral";
 import { HabilidadesLaborales } from "../ambito-laboral/Habilidades-Laborales";
 import { CarouselProyecs } from '../carousel-proy/carouselProyects';
 import { AspiracionesLaborales } from './AspiracionesLaborales';
-export const itemsSideBar = [
-  { icono:'📈',   texto:'Aspiraciones'},
-  { icono:'💼', texto:'Experiencia laboral' },
-  { icono:'🧠', texto:'Conocimiento' },
-  { icono:'🛠' , texto:'Habilidades'}
-] 
+import { getString, StringId } from '../strings/strings';
+
 export const AmbitoLaboral = ()=>{
 
-   const [seccion,setSeccion] = useState(1);
+  const [seccion,setSeccion] = useState(1);
   function changeSeccion(val){
     setSeccion(val);
     

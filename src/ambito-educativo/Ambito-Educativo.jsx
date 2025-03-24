@@ -4,11 +4,7 @@ import { ISCEducativo } from './ISC-Educativo';
 import { ProyectosEducativo } from './Proyectos-Educativo';
 import { CarouselProyecs } from '../carousel-proy/carouselProyects';
 import { Udemy } from './Udemy';
-export const itemsSideBar = [
-  { icono:'💻', texto:'Ing.En sistemas computacionales' },
-  { icono:'💻', texto:'Cursos en Udemy.' },
-  
-] 
+ 
 export const AmbitoEducativo = () => {
   const [seccion,setSeccion] = useState(1);
   function changeSeccion(val){

@@ -27,9 +27,9 @@ export function NavBar({currLanguage, setCurrLanguage}) {
   const [curNav,setCurNav] = useState(0);
   
   const navigation = [
-  { name: "🗄 Ámbito laboral", href: "/Portafolio-Personal-Cris/ambito-laboral", current: false },
-  { name: "🎒 Ámbito educativo", href: "/Portafolio-Personal-Cris/ambito-educativo", current: false },
-  { name: "🧔 Ámbito personal", href: "/Portafolio-Personal-Cris/ambito-personal", current: false },
+  { name: `🗄 ${getString(StringId.MSG_ID_3, null)}`, href: "/Portafolio-Personal-Cris/ambito-laboral", current: false },
+  { name: `🎒 ${getString(StringId.MSG_ID_2, null)}`, href: "/Portafolio-Personal-Cris/ambito-educativo", current: false },
+  { name: `🧔 ${getString(StringId.MSG_ID_4, null)}`, href: "/Portafolio-Personal-Cris/ambito-personal", current: false },
 ];
   if( location.pathname === navigation[0].href || location.pathname === "/Portafolio-Personal-Cris/" ){
     navigation[0].current = true;
@@ -133,7 +133,7 @@ export function NavBar({currLanguage, setCurrLanguage}) {
                     
                   {/* {<BellIcon className="h-6 w-6" aria-hidden="true" />} */}
                   <a href="https://drive.google.com/file/d/12rTGsu3rq7K3hngF33QCMgdy305ZT9Gh/view?usp=sharing" target="_blanck" className= "flex justify-center items-center rounded-full">
-                    <span className="text-xl flex">CV
+                    <span className="text-base flex">CV
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                     </svg>
@@ -142,7 +142,7 @@ export function NavBar({currLanguage, setCurrLanguage}) {
                   
                   </a>
                 </button>
-                <div className="language flex">
+                <div className="language flex ">
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex px-2 rounded-full  text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -175,7 +175,7 @@ export function NavBar({currLanguage, setCurrLanguage}) {
                           <a
                             className={classNames(
                               active ? "bg-gray-700" : "",
-                              "block px-4 py-2 text-sm text-white cursor-pointer"
+                              "block px-4 py-2 text-base text-white cursor-pointer"
                             )}
                           onClick={() =>  {
                             localStorage.setItem("language", "english") 
@@ -247,7 +247,7 @@ export function NavBar({currLanguage, setCurrLanguage}) {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "hover:bg-gray-700 bg-gray-900 text-white "
+                            ? "hover:bg-gray-700 bg-gray-900 text-white border-2 border-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium "
                         )}

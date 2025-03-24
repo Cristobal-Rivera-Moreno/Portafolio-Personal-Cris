@@ -4,7 +4,7 @@
 }
 
 #indicators-carousel::before{
-    content: "🗕 🗖 ╳";
+    content: "_ [ ] x";
     color: antiquewhite;
     position: absolute;
     top: -1.35rem;
